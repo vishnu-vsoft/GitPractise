@@ -16,9 +16,9 @@ namespace GitPractise
                 Console.WriteLine("Enter your option 1) Conversion\n 5)Exit");
                 i = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter American dollars to be converted into Indian rupees");
-                
-                
-                
+                double amount = double.Parse(Console.ReadLine());
+                double convertedAmount = amount * 84.44;
+               
                 Console.WriteLine($"Converted amount is {convertedAmount}");
                 Console.ReadLine();
             }
