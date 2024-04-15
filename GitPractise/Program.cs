@@ -10,12 +10,18 @@ namespace GitPractise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter American dollars to be converted into Indian rupees");
-            string amount = Console.ReadLine();
-            double convertedAmount = double.Parse(amount) * 83.44;
+            int i = 0;
+            while (i!=5)
+            {   
+                Console.WriteLine("Enter your option 1) Conversion\n 5)Exit");
+                i = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter American dollars to be converted into Indian rupees");
+                string amount = Console.ReadLine();
+                double convertedAmount = double.Parse(amount) * 83.44;
+                Console.WriteLine($"Converted amount is {convertedAmount}");
+                Console.ReadLine();
+            }
             
-            Console.WriteLine($"Converted amount is {convertedAmount}");
-            Console.ReadLine();
         }
     }
 }
