@@ -18,6 +18,7 @@ namespace GitPractise
                 Console.WriteLine("Enter American dollars to be converted into Indian rupees");
                 
                 
+                
                 Console.WriteLine($"Converted amount is {convertedAmount}");
                 Console.ReadLine();
             }
